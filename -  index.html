@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio Contable Patricio</title>
+  <meta name="description" content="Servicios de contaduría financiera, asesoría impositiva y gestión de sueldos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Estudio Contable Patricio</h1>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h2>Tu tranquilidad financiera, nuestra prioridad</h2>
+    <p>Contaduría financiera y asesoría impositiva para pymes y profesionales.</p>
+    <a href="#contacto" class="btn">Solicitar consulta</a>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li><strong>Contabilidad general:</strong> balances, estados financieros, conciliaciones.</li>
+      <li><strong>Asesoría impositiva:</strong> IVA, Ganancias, Monotributo, planificación fiscal.</li>
+      <li><strong>Sueldos y cargas sociales:</strong> liquidaciones, reportes y KPIs laborales.</li>
+      <li><strong>Consultoría financiera:</strong> análisis de costos, proyecciones y tableros.</li>
+    </ul>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre mí</h2>
+    <p>Soy Patricio, contador con más de 10 años de experiencia ayudando a empresas y profesionales a ordenar sus finanzas y optimizar procesos.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/xxxxxx" method="POST">
+      <label>Nombre: <input type="text" name="nombre" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Mensaje: <textarea name="mensaje" required></textarea></label>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Estudio Contable Patricio</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
